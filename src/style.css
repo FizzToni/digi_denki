@@ -1,0 +1,24 @@
+@import "https://unpkg.com/open-props";
+
+main{
+    margin: auto;
+    background-color: lightgray;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    justify-content: center;
+}
+
+div {
+    width:16rem;
+    height:9rem;
+    padding: 1rem;
+    background-color: darkcyan;
+
+    transition: transform 0.2s ease 2s;
+}
+
+div:hover {
+    transform: scale(1.05);
+    transition-delay: 0.1s;
+}
