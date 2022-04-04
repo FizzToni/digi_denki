@@ -1,42 +1,47 @@
 var playBtn = document.getElementById('play'),
     resetBtn = document.getElementById('reset'),
-    heartbeat = document.getElementById('guitar'),
-    heartbeat2 = document.getElementById('strange'),
+    drum_loop = document.getElementById('drum_loop'),
+    piano_loop = document.getElementById('piano_loop'),
+    test_button = document.getElementById('test_button'),
     audios = document.querySelectorAll('audio');
 console.log(audios);
 
 let playing = false;
 
-
 playBtn.addEventListener('click', function() {
-    heartbeat.loop = true;
+    drum_loop.loop = true;
     if(!playing) {
-        heartbeat.play();
+        drum_loop.play();
         playing = true;
     } else {
-        heartbeat.pause();
+        drum_loop.pause();
         playing = false;
     }
 }, false);
 
 resetBtn.addEventListener('click', function() {
-    heartbeat2.loop = true;
+    piano_loop.loop = true;
     if(!playing) {
-        heartbeat2.play();
+        piano_loop.play();
         playing = true;
     } else {
-        heartbeat2.pause();
+        piano_loop.pause();
         playing = false;
     }
 }, false);
 
 /*
 resetBtn.addEventListener('mouseover', function() {
-    heartbeat2.play();
+    piano_loop.play();
 }, false);
 
 resetBtn.addEventListener('mouseleave', function() {
-    heartbeat2.pause();
-    heartbeat2.currentTime = 0;
+    piano_loop.pause();
+    piano_loop.currentTime = 0;
 }, false);
 */
+
+test_button.addEventListener('click', function() {
+    div.transform.rotate(90);
+}, false);
+
