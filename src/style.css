@@ -1,30 +1,65 @@
-@import "node_modules/open-props";
-
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
 }
 
 main{
     margin: auto;
-    background-color: var(--gray-1);
+    background-color: var(--surface-1);
     display: flex;
     flex-wrap: wrap;
-    gap: 0.2rem;
+    gap: var(--size-fluid-3);
+    height: 100vh;
     justify-content: center;
+    align-content: center;
+    filter: blur(5px);
 }
 
-div {
+/* Welcome message */
+.floating_window {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    z-index: var(--layer-1);
+}
+.welcome_message {
+    display: grid;
+    justify-content: center;
+    width: 50%;
+    height: var(--size-fluid-10);
+    margin: auto;
+    padding: var(--size-fluid-5);
+    border-radius: var(--radius-blob-3);
+    box-shadow: var(--shadow-2);
+
+
+    background-color: var(--surface-3);
+    color: var(--text-1);
+}
+
+
+
+/* TILES */
+
+
+.tile {
     width:16rem;
     height:9rem;
     background-color: darkcyan;
     transition: transform 0.5s var(--ease-squish-5) 1s;
 }
 
-div:hover {
+.tile:hover {
     transform: scale(1.05);
     transition-delay: 0s;
+}
+
+.tile:active {
+    z-index: var(--layer-2);
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    animation: none;
 }
 
 img {
@@ -32,3 +67,6 @@ img {
     height: 100%;
     object-fit: cover;
 }
+
+
+

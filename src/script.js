@@ -13,14 +13,17 @@ let lead_1_img = document.getElementById('lead_1'),
     ambience_audio = document.getElementById('ambience_loop'),
     drums_audio = document.getElementById('drums_loop'),
     clarinet_audio = document.getElementById('clarinet_loop'),
-    voice_audio = document.getElementById('voice_loop')
+    voice_audio = document.getElementById('voice_loop'),
 
-    init_button = document.getElementById('initiate')
+    init_button = document.getElementById('initiate'),
+    init_window = document.getElementById('floating_window'),
+    main_window = document.getElementById('main_window'),
+
 
     /* for hover test */
-    test_button = document.getElementById('test')
+    test_button = document.getElementById('test'),
     piano_hover = document.getElementById('piano_loop')
-
+;
 
 init_button.addEventListener('click', function(){
     lead_1_audio.volume = 0;
@@ -43,6 +46,10 @@ init_button.addEventListener('click', function(){
     drums_audio.play();
     clarinet_audio.play();
     voice_audio.play();
+
+    main_window.style.filter = 'blur(0px)';
+    init_window.style.display = 'none';
+
 })
 
 lead_1_img.addEventListener('click', function() {
