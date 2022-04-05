@@ -45,6 +45,8 @@ let Ais1_audio = document.getElementById('Ais1'),
     Dis5_audio = document.getElementById('Dis5'),
     F5_audio = document.getElementById('F5'),
 
+    Ais1_img = document.getElementById('Ais1_img'),
+
     C2_img = document.getElementById('C2_img'),
     Dis2_img = document.getElementById('Dis2_img'),
     F2_img = document.getElementById('F2_img'),
@@ -132,78 +134,97 @@ clarinet_img.addEventListener('click', function() {
 
 /* HOVER EFFECT */
 Ais1_img.addEventListener('mouseover', function() {
+    Ais1_audio.currentTime = 0;
     Ais1_audio.play();
 }, false);
 
 C2_img.addEventListener('mouseover', function() {
+    C2_audio.currentTime = 0;
     C2_audio.play();
 }, false);
 
 Dis2_img.addEventListener('mouseover', function() {
-    Dis3_audio.play();
+    Dis2_audio.currentTime = 0;
+    Dis2_audio.play();
 }, false);
 
 F2_img.addEventListener('mouseover', function() {
+    F2_audio.currentTime = 0;
     F2_audio.play();
 }, false);
 
 G2_img.addEventListener('mouseover', function() {
+    G2_audio.currentTime = 0;
     G2_audio.play();
 }, false);
 
 Ais2_img.addEventListener('mouseover', function() {
+    Ais2_audio.currentTime = 0;
     Ais2_audio.play();
 }, false);
 
 C3_img.addEventListener('mouseover', function() {
+    C3_audio.currentTime = 0;
     C3_audio.play();
 }, false);
 
 Dis3_img.addEventListener('mouseover', function() {
+    Dis3_audio.currentTime = 0;
     Dis3_audio.play();
 }, false);
 
 F3_img.addEventListener('mouseover', function() {
+    F3_audio.currentTime = 0;
     F3_audio.play();
 }, false);
 
 G3_img.addEventListener('mouseover', function() {
+    G3_audio.currentTime = 0;
     G3_audio.play();
 }, false);
 
 Ais3_img.addEventListener('mouseover', function() {
+    Ais3_audio.currentTime = 0;
     Ais3_audio.play();
 }, false);
 
 C4_img.addEventListener('mouseover', function() {
+    C4_audio.currentTime = 0;
     C4_audio.play();
 }, false);
 
 Dis4_img.addEventListener('mouseover', function() {
+    Dis4_audio.currentTime = 0;
     Dis4_audio.play();
 }, false);
 
 F4_img.addEventListener('mouseover', function() {
+    F4_audio.currentTime = 0;
     F4_audio.play();
 }, false);
 
 G4_img.addEventListener('mouseover', function() {
+    G4_audio.currentTime = 0;
     G4_audio.play();
 }, false);
 
 Ais4_img.addEventListener('mouseover', function() {
+    Ais4_audio.currentTime = 0;
     Ais4_audio.play();
 }, false);
 
 C5_img.addEventListener('mouseover', function() {
+    C5_audio.currentTime = 0;
     C5_audio.play();
 }, false);
 
 Dis5_img.addEventListener('mouseover', function() {
+    Dis5_audio.currentTime = 0;
     Dis5_audio.play();
 }, false);
 
 F5_img.addEventListener('mouseover', function() {
+    F5_audio.currentTime = 0;
     F5_audio.play();
 }, false);
 
