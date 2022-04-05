@@ -8,7 +8,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     gap: var(--size-fluid-3);
-    height: 100vh;
+    height: 80vh;
     justify-content: center;
     align-content: center;
     filter: blur(5px);
@@ -46,7 +46,8 @@ main{
     width:16rem;
     height:9rem;
     background-color: darkcyan;
-    transition: transform 0.5s var(--ease-squish-5) 1s;
+    box-shadow: var(--shadow-2);
+    transition: transform .3s var(--ease-squish-5) .5s;
 }
 
 .tile:hover {
@@ -69,4 +70,107 @@ img {
 }
 
 
+/* Animated Audio Controls */
+.music-controller {
+    display: flex;
+    gap: 10rem;
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
+}
 
+.lead_1 {
+    display: none;
+    gap: 0.5rem;
+}
+.first {
+    animation: jump1 infinite 1s;
+    var(--animation-slide-in-down) backwards;
+}
+.second {
+    animation: jump2 infinite 1s;
+}
+.third {
+    animation: jump3 infinite 1s;
+}
+
+@keyframes jump1 {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes jump2 {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    75% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes jump3 {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.lead_2 {
+    display: flex;
+    gap: 0.5rem;
+}
+.drums {
+    display: flex;
+    gap: 0.5rem;
+}
+.ambiance {
+    display: flex;
+    gap: 0.5rem;
+}
+.voice {
+    display: flex;
+    gap: 0.5rem;
+}
+.clarinet {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.circle {
+    border-radius: var(--radius-round);
+    background-color: var(--red-5);
+    width: 30px;
+    height: 30px;
+}

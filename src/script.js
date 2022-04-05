@@ -19,6 +19,8 @@ let lead_1_img = document.getElementById('lead_1'),
     init_window = document.getElementById('floating_window'),
     main_window = document.getElementById('main_window'),
 
+    /* animation start */
+    lead_1_animation = document.getElementById('lead_1_animation'),
 
     /* for hover test */
     test_button = document.getElementById('test'),
@@ -50,11 +52,13 @@ init_button.addEventListener('click', function(){
     main_window.style.filter = 'blur(0px)';
     init_window.style.display = 'none';
 
+
 })
 
 lead_1_img.addEventListener('click', function() {
     lead_1_audio.volume = .3;
-}, false);
+    lead_1_animation.style.display = 'flex';
+    }, false);
 
 lead_2_img.addEventListener('click', function() {
     lead_2_audio.volume = .3;
