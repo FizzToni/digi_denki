@@ -1,6 +1,4 @@
-let audios = document.querySelectorAll('audio');
-console.log(audios);
-
+/* Song Elements */
 let lead_1_img = document.getElementById('lead_1'),
     lead_2_img = document.getElementById('lead_2'),
     ambience_img = document.getElementById('ambience'),
@@ -20,12 +18,62 @@ let lead_1_img = document.getElementById('lead_1'),
     main_window = document.getElementById('main_window'),
 
     /* animation start */
-    lead_1_animation = document.getElementById('lead_1_animation'),
+    lead_1_animation = document.getElementById('lead_1_animation');
 
-    /* for hover test */
-    test_button = document.getElementById('test'),
-    piano_hover = document.getElementById('piano_loop')
+/* Single Notes */
+let Ais1_audio = document.getElementById('Ais1'),
+
+    C2_audio = document.getElementById('C2'),
+    Dis2_audio = document.getElementById('Dis2'),
+    F2_audio = document.getElementById('F2'),
+    G2_audio = document.getElementById('G2'),
+    Ais2_audio = document.getElementById('Ais2'),
+
+    C3_audio = document.getElementById('C3'),
+    Dis3_audio = document.getElementById('Dis3'),
+    F3_audio = document.getElementById('F3'),
+    G3_audio = document.getElementById('G3'),
+    Ais3_audio = document.getElementById('Ais3'),
+
+    C4_audio = document.getElementById('C4'),
+    Dis4_audio = document.getElementById('Dis4'),
+    F4_audio = document.getElementById('F4'),
+    G4_audio = document.getElementById('G4'),
+    Ais4_audio = document.getElementById('Ais4'),
+
+    C5_audio = document.getElementById('C5'),
+    Dis5_audio = document.getElementById('Dis5'),
+    F5_audio = document.getElementById('F5'),
+
+    C2_img = document.getElementById('C2_img'),
+    Dis2_img = document.getElementById('Dis2_img'),
+    F2_img = document.getElementById('F2_img'),
+    G2_img = document.getElementById('G2_img'),
+    Ais2_img = document.getElementById('Ais2_img'),
+
+    C3_img = document.getElementById('C3_img'),
+    Dis3_img = document.getElementById('Dis3_img'),
+    F3_img = document.getElementById('F3_img'),
+    G3_img = document.getElementById('G3_img'),
+    Ais3_img = document.getElementById('Ais3_img'),
+
+    C4_img = document.getElementById('C4_img'),
+    Dis4_img = document.getElementById('Dis4_img'),
+    F4_img = document.getElementById('F4_img'),
+    G4_img = document.getElementById('G4_img'),
+    Ais4_img = document.getElementById('Ais4_img'),
+
+    C5_img = document.getElementById('C5_img'),
+    Dis5_img = document.getElementById('Dis5_img'),
+    F5_img = document.getElementById('F5_img');
+
+
+
+
+
 ;
+
+
 
 init_button.addEventListener('click', function(){
     lead_1_audio.volume = 0;
@@ -83,11 +131,84 @@ clarinet_img.addEventListener('click', function() {
 
 
 /* HOVER EFFECT */
-
-test_button.addEventListener('mouseover', function() {
-    piano_hover.volume = 1;
-    piano_hover.play();
+Ais1_img.addEventListener('mouseover', function() {
+    Ais1_audio.play();
 }, false);
+
+C2_img.addEventListener('mouseover', function() {
+    C2_audio.play();
+}, false);
+
+Dis2_img.addEventListener('mouseover', function() {
+    Dis3_audio.play();
+}, false);
+
+F2_img.addEventListener('mouseover', function() {
+    F2_audio.play();
+}, false);
+
+G2_img.addEventListener('mouseover', function() {
+    G2_audio.play();
+}, false);
+
+Ais2_img.addEventListener('mouseover', function() {
+    Ais2_audio.play();
+}, false);
+
+C3_img.addEventListener('mouseover', function() {
+    C3_audio.play();
+}, false);
+
+Dis3_img.addEventListener('mouseover', function() {
+    Dis3_audio.play();
+}, false);
+
+F3_img.addEventListener('mouseover', function() {
+    F3_audio.play();
+}, false);
+
+G3_img.addEventListener('mouseover', function() {
+    G3_audio.play();
+}, false);
+
+Ais3_img.addEventListener('mouseover', function() {
+    Ais3_audio.play();
+}, false);
+
+C4_img.addEventListener('mouseover', function() {
+    C4_audio.play();
+}, false);
+
+Dis4_img.addEventListener('mouseover', function() {
+    Dis4_audio.play();
+}, false);
+
+F4_img.addEventListener('mouseover', function() {
+    F4_audio.play();
+}, false);
+
+G4_img.addEventListener('mouseover', function() {
+    G4_audio.play();
+}, false);
+
+Ais4_img.addEventListener('mouseover', function() {
+    Ais4_audio.play();
+}, false);
+
+C5_img.addEventListener('mouseover', function() {
+    C5_audio.play();
+}, false);
+
+Dis5_img.addEventListener('mouseover', function() {
+    Dis5_audio.play();
+}, false);
+
+F5_img.addEventListener('mouseover', function() {
+    F5_audio.play();
+}, false);
+
+
+
 
 /*
 test_button.addEventListener('mouseleave', function() {
