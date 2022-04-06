@@ -18,7 +18,13 @@ let lead_1_img = document.getElementById('lead_1'),
     main_window = document.getElementById('main_window'),
 
     /* animation start */
-    lead_1_animation = document.getElementById('lead_1_animation');
+    lead_1_animation = document.getElementById('lead_1_animation'),
+    bass_animation = document.getElementById('bass-animation'),
+    boom_animation = document.getElementById('boom-animation'),
+    vibra_animation = document.getElementById('vibra-animation'),
+    sing_animation = document.getElementById('sing-animation'),
+    clarinet_animation = document.getElementById('clarinet_animation')
+;
 
 /* Single Notes */
 let Ais1_audio = document.getElementById('Ais1'),
@@ -112,23 +118,28 @@ lead_1_img.addEventListener('click', function() {
 
 lead_2_img.addEventListener('click', function() {
     lead_2_audio.volume = .3;
-
-}, false);
+    bass_animation.style.display = 'flex';
+    }, false);
 
 ambience_img.addEventListener('click', function() {
     ambience_audio.volume = .3;
+    vibra_animation.style.display = 'flex';
 }, false);
 
 drums_img.addEventListener('click', function() {
     drums_audio.volume = 1;
+    boom_animation.style.display = 'flex';
 }, false);
 
 voice_img.addEventListener('click', function() {
     voice_audio.volume = .5;
+    sing_animation.style.display = 'flex';
+
 }, false);
 
 clarinet_img.addEventListener('click', function() {
     clarinet_audio.volume = .3;
+    clarinet_animation.style.display = 'flex';
 }, false);
 
 
@@ -227,13 +238,3 @@ F5_img.addEventListener('mouseover', function() {
     F5_audio.currentTime = 0;
     F5_audio.play();
 }, false);
-
-
-
-
-/*
-test_button.addEventListener('mouseleave', function() {
-    fadeOut(piano_hover);
-    piano_hover.currentTime = 0;
-}, false);
-*/

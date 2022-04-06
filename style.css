@@ -91,7 +91,6 @@ img {
 }
 .first {
     animation: jump1 infinite 1s;
-    var(--animation-slide-in-down) backwards;
 }
 .second {
     animation: jump2 infinite 1s;
@@ -99,7 +98,6 @@ img {
 .third {
     animation: jump3 infinite 1s;
 }
-
 @keyframes jump1 {
     0% {
         transform: translateY(0px);
@@ -152,17 +150,12 @@ img {
     }
 }
 
-.lead_2 {
-    /*
+.bass {
     display: none;
-    */
-}
-.big {
     width: 50px;
     height: 50px;
     animation: bounce 1s linear infinite;
 }
-
 @keyframes bounce {
     0% {
         transform: scale(1, .75);
@@ -188,13 +181,12 @@ img {
     }
 }
 
-.drums {
-    display: flex;
-    gap: 0.5rem;
-}
+
 .boom {
+    display: none;
     width: 50px;
     height: 50px;
+    margin: 1px;
     animation: boom 4s step-start infinite;
     animation-delay: 0s;
 }
@@ -225,16 +217,95 @@ img {
     }
 }
 
-.ambiance {
-    display: flex;
-    gap: 0.5rem;
+
+.vibra {
+    display: none;
+    width: 60px;
+    height: 30px;
+    animation: vibrate 0.5s ease infinite;
 }
-.voice {
-    display: flex;
-    gap: 0.5rem;
+@keyframes vibrate {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        transform: translate(2px, 2px);
+    }
+    80% {
+        transform: translate(2px, -2px);
+    }
+    100% {
+        transform: translate(0);
+    }
 }
+
+.sing {
+    display: none;
+    width: 50px;
+    height: 30px;
+    animation: sing 2s linear infinite;
+}
+@keyframes sing {
+    0% {
+        transform: scale(1.0, 1.0);
+    }
+    12.5% {
+        transform: scale(0.8, 0.5);
+    }
+    25% {
+        transform: rotate3d(0, 0, 1, -10deg);
+    }
+    37.5% {
+        transform: scale(1.5, 1.1);
+    }
+    50% {
+        transform: scale(1.2, 1.1);
+    }
+    72.5% {
+        transform: scale(1.2, 0.8);
+    }
+    85% {
+        transform: rotate3d(0, 0, 1, 10deg);
+    }
+    100% {
+        transform: scale(1.0, 0.8);
+    }
+}
+
 .clarinet {
-    display: flex;
-    gap: 0.5rem;
+    display: none;
+}
+.first-half, .second-half {
+    width: 60px;
+    height: 20px;
+}
+.second-half {
+    margin-left: -25px;
+    animation: flutter 1s ease infinite;
+}
+@keyframes flutter {
+    10% {
+        transform: scale3d(1, 2, 1);
+    }
+    20% {
+        transform: rotate3d(0,1,0, 90deg);
+    }
+    30% {
+        transform: scale3d(1, 1, 1);
+    }
+    40% {
+        transform: rotate3d(0,1,0, -90deg);
+    }
+    100% {
+        transform: rotate3d(0,1,0, 0deg);
+
+    }
+
 }
 
