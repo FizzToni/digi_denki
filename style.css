@@ -278,34 +278,35 @@ img {
     }
 }
 
-.clarinet {
-    display: none;
-}
-.first-half, .second-half {
+.stick {
     width: 60px;
     height: 20px;
+    animation: upndown 16s step-end infinite;
 }
-.second-half {
-    margin-left: -25px;
-    animation: flutter 1s ease infinite;
-}
-@keyframes flutter {
-    10% {
-        transform: scale3d(1, 2, 1);
-    }
-    20% {
-        transform: rotate3d(0,1,0, 90deg);
-    }
-    30% {
-        transform: scale3d(1, 1, 1);
-    }
-    40% {
-        transform: rotate3d(0,1,0, -90deg);
-    }
-    100% {
-        transform: rotate3d(0,1,0, 0deg);
+@keyframes upndown {
+    0% {transform: translateY(-70px);}
+    9.375% {transform: translateY(-60px);}
+    10.9375% {transform: translateY(-50px);}
+    14.0625% {transform: translateY(-40px);}
+    21.875% {transform: translateY(-50px);}
 
-    }
+    25% {transform: translateY(-70px);}
+    34.375% {transform: translateY(-80px);}
+    35.9375% {transform: translateY(-70px);}
+    39.0625% {transform: translateY(-50px);}
+
+    50% {transform: translateY(-70px);}
+    59.375% {transform: translateY(-60px);}
+    60.9375% {transform: translateY(-50px);}
+    64.0625% {transform: translateY(-40px);}
+    71.875% {transform: translateY(-50px);}
+
+    75% {transform: translateY(-20px);}
+    84.375% {transform: translateY(-30px);}
+    87.5% {transform: translateY(-10px);}
+
+    100% {transform: translateY(-10px);}
+
 
 }
 
