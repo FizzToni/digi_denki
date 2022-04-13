@@ -84,6 +84,30 @@ let Ais1_audio = document.getElementById('Ais1'),
 
 
 init_button.addEventListener('click', function(){
+    Ais1_audio.volume = 0.1;
+
+    C2_audio.volume = 0.1;
+    Dis2_audio.volume = 0.1;
+    F2_audio.volume = 0.1;
+    G2_audio.volume = 0.1;
+    Ais2_audio.volume = 0.1;
+
+    C3_audio.volume = 0.1;
+    Dis3_audio.volume = 0.1;
+    F3_audio.volume = 0.1;
+    G3_audio.volume = 0.1;
+    Ais3_audio.volume = 0.1;
+
+    C4_audio.volume = 0.1;
+    Dis4_audio.volume = 0.1;
+    F4_audio.volume = 0.1;
+    G4_audio.volume = 0.1;
+    Ais4_audio.volume = 0.1;
+
+    C5_audio.volume = 0.1;
+    Dis5_audio.volume = 0.1;
+    F5_audio.volume = 0.1;
+
     lead_1_audio.volume = 0;
     lead_2_audio.volume = 0;
     ambience_audio.volume = 0;
@@ -112,33 +136,33 @@ init_button.addEventListener('click', function(){
 })
 
 lead_1_img.addEventListener('click', function() {
-    lead_1_audio.volume = .3;
+    lead_1_audio.volume = .1;
     lead_1_animation.style.display = 'flex';
     }, false);
 
 lead_2_img.addEventListener('click', function() {
-    lead_2_audio.volume = .3;
+    lead_2_audio.volume = .1;
     bass_animation.style.display = 'flex';
     }, false);
 
 ambience_img.addEventListener('click', function() {
-    ambience_audio.volume = .3;
+    ambience_audio.volume = .1;
     vibra_animation.style.display = 'flex';
 }, false);
 
 drums_img.addEventListener('click', function() {
-    drums_audio.volume = 1;
+    drums_audio.volume = .5;
     boom_animation.style.display = 'flex';
 }, false);
 
 voice_img.addEventListener('click', function() {
-    voice_audio.volume = .5;
+    voice_audio.volume = .25;
     sing_animation.style.display = 'flex';
 
 }, false);
 
 clarinet_img.addEventListener('click', function() {
-    clarinet_audio.volume = .3;
+    clarinet_audio.volume = .1;
     clarinet_animation.style.display = 'flex';
 }, false);
 

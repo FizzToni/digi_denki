@@ -279,6 +279,7 @@ img {
 }
 
 .stick {
+    display: none;
     width: 60px;
     height: 20px;
     animation: upndown 16s step-end infinite;
