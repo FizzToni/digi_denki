@@ -139,31 +139,54 @@ lead_1_img.addEventListener('click', function() {
     lead_1_audio.volume = .1;
     lead_1_animation.style.display = 'flex';
     }, false);
+lead_1_animation.addEventListener('click', function() {
+    lead_1_audio.volume = 0;
+    lead_1_animation.style.display = 'none';
+    }, false);
 
 lead_2_img.addEventListener('click', function() {
     lead_2_audio.volume = .1;
     bass_animation.style.display = 'flex';
+    }, false);
+bass_animation.addEventListener('click', function() {
+    lead_2_audio.volume = 0;
+    bass_animation.style.display = 'none';
     }, false);
 
 ambience_img.addEventListener('click', function() {
     ambience_audio.volume = .1;
     vibra_animation.style.display = 'flex';
 }, false);
+vibra_animation.addEventListener('click', function() {
+    ambience_audio.volume = 0;
+    vibra_animation.style.display = 'none';
+}, false);
 
 drums_img.addEventListener('click', function() {
     drums_audio.volume = .5;
     boom_animation.style.display = 'flex';
 }, false);
+boom_animation.addEventListener('click', function() {
+    drums_audio.volume = 0;
+    boom_animation.style.display = 'none';
+}, false);
 
 voice_img.addEventListener('click', function() {
     voice_audio.volume = .25;
     sing_animation.style.display = 'flex';
-
+}, false);
+sing_animation.addEventListener('click', function() {
+    voice_audio.volume = 0;
+    sing_animation.style.display = 'none';
 }, false);
 
 clarinet_img.addEventListener('click', function() {
     clarinet_audio.volume = .1;
     clarinet_animation.style.display = 'flex';
+}, false);
+clarinet_animation.addEventListener('click', function() {
+    clarinet_audio.volume = 0;
+    clarinet_animation.style.display = 'none';
 }, false);
 
 
